@@ -6,7 +6,7 @@ observationAbout: C:CDC_Places->LocationName
 observationPeriod: "P1Y"
 value: C:CDC_Places->Data_Value
 
-Node: E:CDC_Places->E2
+Node: E:CDC_Places->E1
 observationAbout: C:CDC_Places->LocationName
 typeOf: dcs:StatVarObservation
 observationDate: C:CDC_Places->Year
@@ -14,7 +14,7 @@ variableMeasured: C:CDC_Places->Low_Confidence_Limit_StatVar
 observationPeriod: "P1Y"
 value: C:CDC_Places->Low_Confidence_Limit
 
-Node: E:CDC_Places->E3
+Node: E:CDC_Places->E2
 observationAbout: C:CDC_Places->LocationName
 typeOf: dcs:StatVarObservation
 observationDate: C:CDC_Places->Year
@@ -22,7 +22,7 @@ variableMeasured: C:CDC_Places->High_Confidence_Limit_StatVar
 observationPeriod: "P1Y"
 value: C:CDC_Places->High_Confidence_Limit
 
-Node: E:CDC_Places->E4
+Node: E:CDC_Places->E3
 observationAbout: C:CDC_Places->LocationName
 typeOf: dcs:StatVarObservation
 observationDate: C:CDC_Places->Year
