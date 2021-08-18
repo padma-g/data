@@ -1,6 +1,6 @@
 Node: E:CDC_Places->E0
 typeOf: dcs:StatVarObservation
-variableMeasured: C:CDC_Places->StatisticalVariable
+variableMeasured: C:CDC_Places->StatVar
 observationDate: C:CDC_Places->Year
 observationAbout: C:CDC_Places->LocationName
 observationPeriod: "P1Y"
