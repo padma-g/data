@@ -4,6 +4,7 @@ variableMeasured: C:CDC_Places->StatVar
 observationDate: C:CDC_Places->Year
 observationAbout: C:CDC_Places->LocationName
 observationPeriod: "P1Y"
+measurementMethod: dcs:CrudePrevalence
 value: C:CDC_Places->Data_Value
 
 Node: E:CDC_Places->E1
@@ -12,6 +13,7 @@ typeOf: dcs:StatVarObservation
 observationDate: C:CDC_Places->Year
 variableMeasured: C:CDC_Places->Low_Confidence_Limit_StatVar
 observationPeriod: "P1Y"
+measurementMethod: dcs:CrudePrevalenceConfidenceLimit
 value: C:CDC_Places->Low_Confidence_Limit
 
 Node: E:CDC_Places->E2
@@ -20,6 +22,7 @@ typeOf: dcs:StatVarObservation
 observationDate: C:CDC_Places->Year
 variableMeasured: C:CDC_Places->High_Confidence_Limit_StatVar
 observationPeriod: "P1Y"
+measurementMethod: dcs:CrudePrevalenceConfidenceLimit
 value: C:CDC_Places->High_Confidence_Limit
 
 Node: E:CDC_Places->E3
