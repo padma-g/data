@@ -17,6 +17,11 @@ typeOf: dcs:AdjustmentTypeEnum
 description: "Indicates confidence limit for crude or non adjusted prevalence (often used for health outcomes)."
 name: "CrudePrevalenceConfidenceLimit"
 
+Node: dcid:AgeAdjustedPrevalenceConfidenceLimit
+typeOf: dcs:AdjustmentTypeEnum
+description: "Indicates confidence limit for age-adjusted prevalence (often used for health outcomes)."
+name: "AgeAdjustedPrevalenceConfidenceLimit"
+
 Node: dcid:Percent_Person_65OrMoreYears_WithAllTeethLoss
 name: "Prevalence of 65 Or More Years, All Teeth Loss"
 typeOf: dcs:StatisticalVariable
