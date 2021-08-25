@@ -12,12 +12,15 @@ name: "confidenceIntervalUpperLimit"
 description: "The upper limit of a confidence interval for a measured value."
 rangeIncludes: dcs:Percent
 
-Node: dcid:sampleSize
-typeOf: schema:Property
-domainIncludes: schema:Observation
-name: "sampleSize"
-description: "The sample size for an observation."
-rangeIncludes: dcs:Text, dcs:Number, dcs:Percent, dcs:Enumeration
+Node: dcid:CrudePrevalenceConfidenceLimit
+typeOf: dcs:AdjustmentTypeEnum
+description: "Indicates confidence limit for crude or non adjusted prevalence (often used for health outcomes)."
+name: "CrudePrevalenceConfidenceLimit"
+
+Node: dcid:AgeAdjustedPrevalenceConfidenceLimit
+typeOf: dcs:AdjustmentTypeEnum
+description: "Indicates confidence limit for age-adjusted prevalence (often used for health outcomes)."
+name: "AgeAdjustedPrevalenceConfidenceLimit"
 
 Node: dcid:Percent_Person_65OrMoreYears_WithAllTeethLoss
 name: "Prevalence of 65 Or More Years, All Teeth Loss"
@@ -43,6 +46,7 @@ name: "Lower Confidence Interval Limit, Prevalence of 65 Or More Years, All Teet
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years65Onwards
 healthOutcome: dcs:AllTeethLoss
 statType: dcs:confidenceIntervalLowerLimit
@@ -52,6 +56,7 @@ name: "Upper Confidence Interval Limit, Prevalence of 65 Or More Years, All Teet
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years65Onwards
 healthOutcome: dcs:AllTeethLoss
 statType: dcs:confidenceIntervalUpperLimit
@@ -61,15 +66,17 @@ name: "Sample Size, Prevalence of 65 Or More Years, All Teeth Loss"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years65Onwards
 healthOutcome: dcs:AllTeethLoss
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_50To74Years_Female_ReceivedMammography
 name: "Lower Confidence Interval Limit, Prevalence of 50 - 74 Years, Female, Mammography"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years50To74
 healthPrevention: dcs:Mammography
 statType: dcs:confidenceIntervalLowerLimit
@@ -79,6 +86,7 @@ name: "Upper Confidence Interval Limit, Prevalence of 50 - 74 Years, Female, Mam
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years50To74
 healthPrevention: dcs:Mammography
 statType: dcs:confidenceIntervalUpperLimit
@@ -88,15 +96,17 @@ name: "Sample Size, Prevalence of 50 - 74 Years, Female, Mammography"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years50To74
 healthPrevention: dcs:Mammography
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithArthritis
 name: "Lower Confidence Interval Limit, Prevalence of Arthritis"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:Arthritis
 statType: dcs:confidenceIntervalLowerLimit
@@ -106,6 +116,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Arthritis"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:Arthritis
 statType: dcs:confidenceIntervalUpperLimit
@@ -115,15 +126,17 @@ name: "Sample Size, Prevalence of Arthritis"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:Arthritis
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithStroke
 name: "Lower Confidence Interval Limit, Prevalence of Stroke"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:Stroke
 statType: dcs:confidenceIntervalLowerLimit
@@ -133,6 +146,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Stroke"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:Stroke
 statType: dcs:confidenceIntervalUpperLimit
@@ -142,15 +156,17 @@ name: "Sample Size, Prevalence of Stroke"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:Stroke
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_Obesity
 name: "Lower Confidence Interval Limit, Prevalence of Obesity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:Obesity
 statType: dcs:confidenceIntervalLowerLimit
@@ -160,6 +176,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Obesity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:Obesity
 statType: dcs:confidenceIntervalUpperLimit
@@ -169,15 +186,17 @@ name: "Sample Size, Prevalence of Obesity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:Obesity
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithAsthma
 name: "Lower Confidence Interval Limit, Prevalence of Asthma"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:Asthma
 statType: dcs:confidenceIntervalLowerLimit
@@ -187,6 +206,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Asthma"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:Asthma
 statType: dcs:confidenceIntervalUpperLimit
@@ -196,15 +216,17 @@ name: "Sample Size, Prevalence of Asthma"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:Asthma
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_BingeDrinking
 name: "Lower Confidence Interval Limit, Prevalence of Binge Drinking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:BingeDrinking
 statType: dcs:confidenceIntervalLowerLimit
@@ -214,6 +236,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Binge Drinking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:BingeDrinking
 statType: dcs:confidenceIntervalUpperLimit
@@ -223,15 +246,17 @@ name: "Sample Size, Prevalence of Binge Drinking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:BingeDrinking
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_Smoking
 name: "Lower Confidence Interval Limit, Prevalence of Smoking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:Smoking
 statType: dcs:confidenceIntervalLowerLimit
@@ -241,6 +266,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Smoking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:Smoking
 statType: dcs:confidenceIntervalUpperLimit
@@ -250,15 +276,17 @@ name: "Sample Size, Prevalence of Smoking"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:Smoking
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_SleepLessThan7Hours
 name: "Lower Confidence Interval Limit, Prevalence of Sleep Less Than 7 Hours"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:SleepLessThan7Hours
 statType: dcs:confidenceIntervalLowerLimit
@@ -268,6 +296,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Sleep Less Than 7 Hours"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:SleepLessThan7Hours
 statType: dcs:confidenceIntervalUpperLimit
@@ -277,15 +306,17 @@ name: "Sample Size, Prevalence of Sleep Less Than 7 Hours"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:SleepLessThan7Hours
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_50To75Years_ReceivedColorectalCancerScreening
 name: "Lower Confidence Interval Limit, Prevalence of 50 - 75 Years, Colorectal Cancer Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years50To75
 healthPrevention: dcs:ColorectalCancerScreening
 statType: dcs:confidenceIntervalLowerLimit
@@ -295,6 +326,7 @@ name: "Upper Confidence Interval Limit, Prevalence of 50 - 75 Years, Colorectal 
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years50To75
 healthPrevention: dcs:ColorectalCancerScreening
 statType: dcs:confidenceIntervalUpperLimit
@@ -304,15 +336,17 @@ name: "Sample Size, Prevalence of 50 - 75 Years, Colorectal Cancer Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years50To75
 healthPrevention: dcs:ColorectalCancerScreening
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithCancerExcludingSkinCancer
 name: "Lower Confidence Interval Limit, Prevalence of Cancer Excluding Skin Cancer"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:CancerExcludingSkinCancer
 statType: dcs:confidenceIntervalLowerLimit
@@ -322,6 +356,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Cancer Excluding Skin Canc
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:CancerExcludingSkinCancer
 statType: dcs:confidenceIntervalUpperLimit
@@ -331,15 +366,17 @@ name: "Sample Size, Prevalence of Cancer Excluding Skin Cancer"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:CancerExcludingSkinCancer
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithPhysicalHealthNotGood
 name: "Lower Confidence Interval Limit, Prevalence of Physical Health Not Good"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:PhysicalHealthNotGood
 statType: dcs:confidenceIntervalLowerLimit
@@ -349,6 +386,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Physical Health Not Good"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:PhysicalHealthNotGood
 statType: dcs:confidenceIntervalUpperLimit
@@ -358,15 +396,17 @@ name: "Sample Size, Prevalence of Physical Health Not Good"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:PhysicalHealthNotGood
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_65OrMoreYears_Male_ReceivedCorePreventiveServices
 name: "Lower Confidence Interval Limit, Prevalence of 65 Years or More, Male, Core Preventive Services"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years65Onwards
 gender: dcs:Male
 healthPrevention: dcs:CorePreventiveServices
@@ -377,6 +417,7 @@ name: "Upper Confidence Interval Limit, Prevalence of 65 Years or More, Male, Co
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years65Onwards
 gender: dcs:Male
 healthPrevention: dcs:CorePreventiveServices
@@ -387,16 +428,18 @@ name: "Sample Size, Prevalence of 65 Years or More, Male, Core Preventive Servic
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years65Onwards
 gender: dcs:Male
 healthPrevention: dcs:CorePreventiveServices
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_65OrMoreYears_Female_ReceivedCorePreventiveServices
 name: "Lower Confidence Interval Limit, Prevalence of 65 Years or More, Female, Core Preventive Services"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years65Onwards
 gender: dcs:Female
 healthPrevention: dcs:CorePreventiveServices
@@ -407,6 +450,7 @@ name: "Upper Confidence Interval Limit, Prevalence of 65 Years or More, Female, 
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years65Onwards
 gender: dcs:Female
 healthPrevention: dcs:CorePreventiveServices
@@ -417,16 +461,18 @@ name: "Sample Size, Prevalence of 65 Years or More, Female, Core Preventive Serv
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years65Onwards
 gender: dcs:Female
 healthPrevention: dcs:CorePreventiveServices
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_ReceivedAnnualCheckup
 name: "Lower Confidence Interval Limit, Prevalence of Annual Checkup"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthPrevention: dcs:AnnualCheckup
 statType: dcs:confidenceIntervalLowerLimit
@@ -436,6 +482,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Annual Checkup"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthPrevention: dcs:AnnualCheckup
 statType: dcs:confidenceIntervalUpperLimit
@@ -445,15 +492,17 @@ name: "Sample Size, Prevalence of Annual Checkup"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthPrevention: dcs:AnnualCheckup
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithHighBloodPressure
 name: "Lower Confidence Interval Limit, Prevalence of High Blood Pressure"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:HighBloodPressure
 statType: dcs:confidenceIntervalLowerLimit
@@ -463,6 +512,7 @@ name: "Upper Confidence Interval Limit, Prevalence of High Blood Pressure"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:HighBloodPressure
 statType: dcs:confidenceIntervalUpperLimit
@@ -472,15 +522,17 @@ name: "Sample Size, Prevalence of High Blood Pressure"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:HighBloodPressure
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_ReceivedDentalVisit
 name: "Lower Confidence Interval Limit, Prevalence of Dental Visit"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthPrevention: dcs:DentalVisit
 statType: dcs:confidenceIntervalLowerLimit
@@ -490,6 +542,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Dental Visit"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthPrevention: dcs:DentalVisit
 statType: dcs:confidenceIntervalUpperLimit
@@ -499,15 +552,17 @@ name: "Sample Size, Prevalence of Dental Visit"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthPrevention: dcs:DentalVisit
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithMentalHealthNotGood
 name: "Lower Confidence Interval Limit, Prevalence of Mental Health Not Good"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:MentalHealthNotGood
 statType: dcs:confidenceIntervalLowerLimit
@@ -517,6 +572,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Mental Health Not Good"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:MentalHealthNotGood
 statType: dcs:confidenceIntervalUpperLimit
@@ -526,15 +582,17 @@ name: "Sample Size, Prevalence of Mental Health Not Good"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:MentalHealthNotGood
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_PhysicalInactivity
 name: "Lower Confidence Interval Limit, Prevalence of Physical Inactivity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:PhysicalInactivity
 statType: dcs:confidenceIntervalLowerLimit
@@ -544,6 +602,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Physical Inactivity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:PhysicalInactivity
 statType: dcs:confidenceIntervalUpperLimit
@@ -553,15 +612,17 @@ name: "Sample Size, Prevalence of Physical Inactivity"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthBehavior: dcs:PhysicalInactivity
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18To64Years_ReceivedNoHealthInsurance
 name: "Lower Confidence Interval Limit, Prevalence of 18 - 64 Years, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18To64
 healthPrevention: dcs:NoHealthInsurance
 statType: dcs:confidenceIntervalLowerLimit
@@ -571,6 +632,7 @@ name: "Upper Confidence Interval Limit, Prevalence of 18 - 64 Years, No Health I
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18To64
 healthPrevention: dcs:NoHealthInsurance
 statType: dcs:confidenceIntervalUpperLimit
@@ -580,15 +642,17 @@ name: "Sample Size, Prevalence of 18 - 64 Years, No Health Insurance"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18To64
 healthPrevention: dcs:NoHealthInsurance
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithChronicObstructivePulmonaryDisease
 name: "Lower Confidence Interval Limit, Prevalence of Chronic Obstructive Pulmonary Disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:ChronicObstructivePulmonaryDisease
 statType: dcs:confidenceIntervalLowerLimit
@@ -598,6 +662,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Chronic Obstructive Pulmon
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:ChronicObstructivePulmonaryDisease
 statType: dcs:confidenceIntervalUpperLimit
@@ -607,15 +672,17 @@ name: "Sample Size, Prevalence of Chronic Obstructive Pulmonary Disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:ChronicObstructivePulmonaryDisease
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_ReceivedCholesterolScreening
 name: "Lower Confidence Interval Limit, Prevalence of Cholesterol Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthPrevention: dcs:CholesterolScreening
 statType: dcs:confidenceIntervalLowerLimit
@@ -625,6 +692,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Cholesterol Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthPrevention: dcs:CholesterolScreening
 statType: dcs:confidenceIntervalUpperLimit
@@ -634,15 +702,17 @@ name: "Sample Size, Prevalence of Cholesterol Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthPrevention: dcs:CholesterolScreening
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithChronicKidneyDisease
 name: "Lower Confidence Interval Limit, Prevalence of Chronic Kidney Disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:ChronicKidneyDisease
 statType: dcs:confidenceIntervalLowerLimit
@@ -652,6 +722,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Chronic Kidney Disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:ChronicKidneyDisease
 statType: dcs:confidenceIntervalUpperLimit
@@ -661,15 +732,17 @@ name: "Sample Size, Prevalence of Chronic Kidney Disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:ChronicKidneyDisease
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithHighCholesterol
 name: "Lower Confidence Interval Limit, Prevalence of High Cholesterol"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:HighCholesterol
 statType: dcs:confidenceIntervalLowerLimit
@@ -679,6 +752,7 @@ name: "Upper Confidence Interval Limit, Prevalence of High Cholesterol"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:HighCholesterol
 statType: dcs:confidenceIntervalUpperLimit
@@ -688,15 +762,17 @@ name: "Sample Size, Prevalence of High Cholesterol"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:HighCholesterol
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithHighBloodPressure_ReceivedTakingBloodPressureMedication
 name: "Lower Confidence Interval Limit, Prevalence of 18 Years or More, High Blood Pressure, Taking Blood Pressure Medication"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:HighBloodPressure
 healthPrevention: dcs:TakingBloodPressureMedication
@@ -707,6 +783,7 @@ name: "Upper Confidence Interval Limit, Prevalence of 18 Years or More, High Blo
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:HighBloodPressure
 healthPrevention: dcs:TakingBloodPressureMedication
@@ -717,16 +794,18 @@ name: "Sample Size, Prevalence of 18 Years or More, High Blood Pressure, Taking 
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:HighBloodPressure
 healthPrevention: dcs:TakingBloodPressureMedication
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_WithCoronaryHeartDisease
 name: "Lower Confidence Interval Limit, Prevalence of Coronary Heart Disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:CoronaryHeartDisease
 statType: dcs:confidenceIntervalLowerLimit
@@ -736,6 +815,7 @@ name: "Upper Confidence Interval Limit, Prevalence of Coronary Heart Disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:CoronaryHeartDisease
 statType: dcs:confidenceIntervalUpperLimit
@@ -745,15 +825,17 @@ name: "Sample Size, Prevalence of Coronary Heart Disease"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years18Onwards
 healthOutcome: dcs:CoronaryHeartDisease
-statType: dcs:sampleSize
+statType: dcs:measuredValue
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Person_21To65Years_Female_ReceivedCervicalCancerScreening
 name: "Lower Confidence Interval Limit, Prevalence of 21 - 65 Years, Female, Received Cervical Cancer Screening"
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years21To65
 gender: dcs:Female
 healthPrevention: dcs:CervicalCancerScreening
@@ -764,6 +846,7 @@ name: "Upper Confidence Interval Limit, Prevalence of 21 - 65 Years, Female, Rec
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:percent
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years21To65
 gender: dcs:Female
 healthPrevention: dcs:CervicalCancerScreening
@@ -774,7 +857,8 @@ name: "Sample Size, Prevalence of 21 - 65 Years, Female, Received Cervical Cance
 typeOf: dcs:StatisticalVariable
 populationType: dcs:Person
 measuredProperty: dcs:count
+measurementMethod: dcs:CrudePrevalence, dcs:AgeAdjustedPrevalence
 age: dcs:Years21To65
 gender: dcs:Female
 healthPrevention: dcs:CervicalCancerScreening
-statType: dcs:sampleSize
+statType: dcs:measuredValue
