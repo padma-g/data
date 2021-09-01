@@ -1,3 +1,10 @@
+Node: dcid:cumulativePercent
+typeOf: schema:Property
+description: "A running percent of all instances that have satisfied the constraints of the Statistical Population."
+domainIncludes: dcs:StatisticalPopulation
+name: "cumulativeCount"
+rangeIncludes: dcs:Integer
+
 Node: dcid:Years18To49
 name: "Years 18 To 49"
 typeOf: dcs:QuantityRange
@@ -289,23 +296,32 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:cumulativeCount
 name: "Cumulative Count, COVID-19 Seroprevalence"
 
-Node: dcid:LowerConfidenceIntervalLimit_CumulativeCount_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:CumulativePercent_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:cumulativeCount
-name: "Lower Confidence Interval Limit, Cumulative Count, COVID-19 Seroprevalence"
+measuredProperty: dcs:cumulativePercent
+name: "Cumulative Percent, COVID-19 Seroprevalence"
 
-Node: dcid:UpperConfidenceIntervalLimit_CumulativeCount_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:LowerConfidenceIntervalLimit_CumulativePercent_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:cumulativeCount
-name: "Upper Confidence Interval Limit, Cumulative Count, COVID-19 Seroprevalence"
+measuredProperty: dcs:cumulativePercent
+name: "Lower Confidence Interval Limit, Cumulative Percent, COVID-19 Seroprevalence"
 
+Node: dcid:UpperConfidenceIntervalLimit_CumulativePercent_MedicalConditionIncident_COVID_19_Seroprevalence
+typeOf: dcs:StatisticalVariable
+populationType: dcs:MedicalConditionIncident
+statType: dcs:measuredValue
+incidentType: dcs:COVID_19
+healthOutcome: dcs:COVID19_Seroprevalence
+measurementMethod: dcs:CDC_COVID19_Seroprevalence
+measuredProperty: dcs:cumulativePercent
+name: "Upper Confidence Interval Limit, Cumulative Percent, COVID-19 Seroprevalence"
