@@ -110,7 +110,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:lowerconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Lower Confidence Interval Limit, Percent of 0 - 17 Years, COVID-19 Seroprevalence"
 age: dcs:Years0To17
 
@@ -121,7 +121,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:lowerconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Lower Confidence Interval Limit, Percent of 18 - 49 Years, COVID-19 Seroprevalence"
 age: dcs:Years18To49
 
@@ -132,7 +132,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:lowerconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Lower Confidence Interval Limit, Percent of 50 - 64 Years, COVID-19 Seroprevalence"
 age: dcs:Years50To64
 
@@ -143,7 +143,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:lowerconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Lower Confidence Interval Limit, Percent of 65 Years or More, COVID-19 Seroprevalence"
 age: dcs:Years65Onwards
 
@@ -154,7 +154,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:upperconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Upper Confidence Interval Limit, Percent of 0 - 17 Years, COVID-19 Seroprevalence"
 age: dcs:Years0To17
 
@@ -165,7 +165,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:upperconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Upper Confidence Interval Limit, Percent of 18 - 49 Years, COVID-19 Seroprevalence"
 age: dcs:Years18To49
 
@@ -176,7 +176,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:upperconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Upper Confidence Interval Limit, Percent of 50 - 64 Years, COVID-19 Seroprevalence"
 age: dcs:Years50To64
 
@@ -187,7 +187,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:upperconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Upper Confidence Interval Limit, Percent of 65 Years or More, COVID-19 Seroprevalence"
 age: dcs:Years65Onwards
 
@@ -242,7 +242,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:lowerconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Lower Confidence Interval Limit, Percent of Female, COVID-19 Seroprevalence"
 gender: dcs:Female
 
@@ -253,7 +253,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:lowerconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Lower Confidence Interval Limit, Percent of Male, COVID-19 Seroprevalence"
 gender: dcs:Male
 
@@ -264,7 +264,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:upperconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Upper Confidence Interval Limit, Percent of Female, COVID-19 Seroprevalence"
 gender: dcs:Female
 
@@ -275,7 +275,7 @@ statType: dcs:measuredValue
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
-measuredProperty: dcs:upperconfidenceintervallimit
+measuredProperty: dcs:percent
 name: "Upper Confidence Interval Limit, Percent of Male, COVID-19 Seroprevalence"
 gender: dcs:Male
 
