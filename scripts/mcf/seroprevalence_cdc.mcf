@@ -8,7 +8,7 @@ Name: "COVID19_Seroprevalence"
 typeOf: dcs:healthOutcome
 description: "Measure of people who have antibodies against COVID-19."
 
-Node: dcid:Count_0To17Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:Count_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -17,9 +17,9 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 name: "Count of 0 - 17 Years, COVID-19 Seroprevalence"
-age: dcs:0To17Years
+age: dcs:Years0To17
 
-Node: dcid:Count_18To49Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:Count_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -28,9 +28,9 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 name: "Count of 18 - 49 Years, COVID-19 Seroprevalence"
-age: dcs:18To49Years
+age: dcs:Years18To49
 
-Node: dcid:Count_50To64Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:Count_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -39,7 +39,7 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 name: "Count of 50 - 64 Years, COVID-19 Seroprevalence"
-age: dcs:50To64Years
+age: dcs:Years50To64
 
 Node: dcid:Count_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
@@ -52,7 +52,7 @@ measuredProperty: dcs:count
 name: "Count of 65 Years or More, COVID-19 Seroprevalence"
 age: dcs:65OrMoreYears
 
-Node: dcid:Percent_0To17Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -61,9 +61,9 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:percent
 name: "Percent of 0 - 17 Years, COVID-19 Seroprevalence"
-age: dcs:0To17Years
+age: dcs:Years0To17
 
-Node: dcid:Percent_18To49Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -72,9 +72,9 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:percent
 name: "Percent of 18 - 49 Years, COVID-19 Seroprevalence"
-age: dcs:18To49Years
+age: dcs:Years18To49
 
-Node: dcid:Percent_50To64Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -83,7 +83,7 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:percent
 name: "Percent of 50 - 64 Years, COVID-19 Seroprevalence"
-age: dcs:50To64Years
+age: dcs:Years50To64
 
 Node: dcid:Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
@@ -96,7 +96,7 @@ measuredProperty: dcs:percent
 name: "Percent of 65 Years or More, COVID-19 Seroprevalence"
 age: dcs:65OrMoreYears
 
-Node: dcid:LowerConfidenceIntervalLimit_Percent_0To17Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -105,9 +105,9 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:lowerconfidenceintervallimit
 name: "Lower Confidence Interval Limit, Percent of 0 - 17 Years, COVID-19 Seroprevalence"
-age: dcs:0To17Years
+age: dcs:Years0To17
 
-Node: dcid:LowerConfidenceIntervalLimit_Percent_18To49Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -116,9 +116,9 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:lowerconfidenceintervallimit
 name: "Lower Confidence Interval Limit, Percent of 18 - 49 Years, COVID-19 Seroprevalence"
-age: dcs:18To49Years
+age: dcs:Years18To49
 
-Node: dcid:LowerConfidenceIntervalLimit_Percent_50To64Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:LowerConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -127,7 +127,7 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:lowerconfidenceintervallimit
 name: "Lower Confidence Interval Limit, Percent of 50 - 64 Years, COVID-19 Seroprevalence"
-age: dcs:50To64Years
+age: dcs:Years50To64
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
@@ -140,7 +140,7 @@ measuredProperty: dcs:lowerconfidenceintervallimit
 name: "Lower Confidence Interval Limit, Percent of 65 Years or More, COVID-19 Seroprevalence"
 age: dcs:65OrMoreYears
 
-Node: dcid:UpperConfidenceIntervalLimit_Percent_0To17Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -149,9 +149,9 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:upperconfidenceintervallimit
 name: "Upper Confidence Interval Limit, Percent of 0 - 17 Years, COVID-19 Seroprevalence"
-age: dcs:0To17Years
+age: dcs:Years0To17
 
-Node: dcid:UpperConfidenceIntervalLimit_Percent_18To49Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -160,9 +160,9 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:upperconfidenceintervallimit
 name: "Upper Confidence Interval Limit, Percent of 18 - 49 Years, COVID-19 Seroprevalence"
-age: dcs:18To49Years
+age: dcs:Years18To49
 
-Node: dcid:UpperConfidenceIntervalLimit_Percent_50To64Years_MedicalConditionIncident_COVID_19_Seroprevalence
+Node: dcid:UpperConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
 statType: dcs:measuredValue
@@ -171,7 +171,7 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:upperconfidenceintervallimit
 name: "Upper Confidence Interval Limit, Percent of 50 - 64 Years, COVID-19 Seroprevalence"
-age: dcs:50To64Years
+age: dcs:Years50To64
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
