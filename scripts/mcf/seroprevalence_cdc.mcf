@@ -1,3 +1,10 @@
+Node: dcid:Years18To49
+name: "Years 18 To 49"
+typeOf: dcs:QuantityRange
+startValue: 18
+endValue: 49
+unitOfMeasure: dcs:Years
+
 Node: dcid:CDC_COVID19_Seroprevalence
 name: "CDC_COVID19_Seroprevalence"
 typeOf: dcs:MeasurementMethodEnum
