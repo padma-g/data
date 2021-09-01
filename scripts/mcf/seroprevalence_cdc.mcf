@@ -50,7 +50,7 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 name: "Count of 65 Years or More, COVID-19 Seroprevalence"
-age: dcs:65OrMoreYears
+age: dcs:Years65Onwards
 
 Node: dcid:Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
@@ -94,7 +94,7 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:percent
 name: "Percent of 65 Years or More, COVID-19 Seroprevalence"
-age: dcs:65OrMoreYears
+age: dcs:Years65Onwards
 
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
@@ -138,7 +138,7 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:lowerconfidenceintervallimit
 name: "Lower Confidence Interval Limit, Percent of 65 Years or More, COVID-19 Seroprevalence"
-age: dcs:65OrMoreYears
+age: dcs:Years65Onwards
 
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
@@ -182,7 +182,7 @@ healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:upperconfidenceintervallimit
 name: "Upper Confidence Interval Limit, Percent of 65 Years or More, COVID-19 Seroprevalence"
-age: dcs:65OrMoreYears
+age: dcs:Years65Onwards
 
 Node: dcid:Count_Female_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
