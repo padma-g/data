@@ -120,7 +120,7 @@ age: dcs:Years65Onwards
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalLowerLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -131,7 +131,7 @@ age: dcs:Years0To17
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalLowerLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -142,7 +142,7 @@ age: dcs:Years18To49
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalLowerLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -153,7 +153,7 @@ age: dcs:Years50To64
 Node: dcid:LowerConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalLowerLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -164,7 +164,7 @@ age: dcs:Years65Onwards
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalUpperLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -175,7 +175,7 @@ age: dcs:Years0To17
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalUpperLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -186,7 +186,7 @@ age: dcs:Years18To49
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalUpperLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -197,7 +197,7 @@ age: dcs:Years50To64
 Node: dcid:UpperConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalUpperLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -252,7 +252,7 @@ gender: dcs:Male
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalLowerLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -263,7 +263,7 @@ gender: dcs:Female
 Node: dcid:LowerConfidenceIntervalLimit_Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalLowerLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -274,7 +274,7 @@ gender: dcs:Male
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalUpperLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -285,7 +285,7 @@ gender: dcs:Female
 Node: dcid:UpperConfidenceIntervalLimit_Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalUpperLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -316,7 +316,7 @@ name: "Cumulative Percent, COVID-19 Seroprevalence"
 Node: dcid:LowerConfidenceIntervalLimit_CumulativePercent_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalLowerLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -326,7 +326,7 @@ name: "Lower Confidence Interval Limit, Cumulative Percent, COVID-19 Seroprevale
 Node: dcid:UpperConfidenceIntervalLimit_CumulativePercent_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalUpperLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -346,7 +346,7 @@ name: "Estimated Cumulative Count, COVID-19 Seroprevalence"
 Node: dcid:LowerConfidenceIntervalLimit_EstimatedCumulativeCount_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalLowerLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
@@ -356,7 +356,7 @@ name: "Lower Confidence Interval Limit, Estimated Cumulative Count, COVID-19 Ser
 Node: dcid:UpperConfidenceIntervalLimit_EstimatedCumulativeCount_MedicalConditionIncident_COVID_19_Seroprevalence
 typeOf: dcs:StatisticalVariable
 populationType: dcs:MedicalConditionIncident
-statType: dcs:measuredValue
+statType: dcs:confidenceIntervalUpperLimit
 incidentType: dcs:COVID_19
 healthOutcome: dcs:COVID19_Seroprevalence
 measurementMethod: dcs:CDC_COVID19_Seroprevalence
