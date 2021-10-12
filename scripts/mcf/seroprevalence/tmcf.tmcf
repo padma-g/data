@@ -16,7 +16,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E2
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -27,7 +27,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E3
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -38,7 +38,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Years0To17_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E4
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -58,7 +58,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E6
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -69,7 +69,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E7
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -80,7 +80,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Years18To49_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E8
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -100,7 +100,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E10
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -111,7 +111,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E11
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -122,7 +122,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Years50To64_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E12
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -142,7 +142,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E14
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -153,7 +153,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E15
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -164,7 +164,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_65OrMoreYears_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E16
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -184,7 +184,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E18
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -195,7 +195,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E19
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -206,7 +206,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Male_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E20
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -226,7 +226,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E22
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -237,7 +237,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E23
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -248,7 +248,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_Female_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E24
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -268,7 +268,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->Percent_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->Percent_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E26
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -279,7 +279,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->LowerConfidenceIntervalLimit_Percent_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E27
 observationAbout: C:CDC_COVID_Seroprevalence->Site
@@ -290,7 +290,7 @@ measurementMethod: dcs:CDC_COVID19_Seroprevalence
 measuredProperty: dcs:count
 measurementDenominator: dcs:Count_Person
 scalingFactor: 100
-C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_MedicalConditionIncident_COVID_19_Seroprevalence
+value: C:CDC_COVID_Seroprevalence->UpperConfidenceIntervalLimit_Percent_MedicalConditionIncident_COVID_19_Seroprevalence
 
 Node: E:CDC_COVID_Seroprevalence->E28
 observationAbout: C:CDC_COVID_Seroprevalence->Site
